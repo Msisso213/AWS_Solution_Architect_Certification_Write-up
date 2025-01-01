@@ -1,2 +1,2 @@
 -S3: this service provides user unlimited object-storage (buckets and objects). An object is simply data (document, image, video, etc.) with it's metadata (information about the object such as object size, creation
-date, etc.) and a unique key to access it.
+date, etc.) and a unique key to access it. A bucket is simply a container with many objects. It also has a unique name. The object and bucket concept is similar to a file and folder concept.
