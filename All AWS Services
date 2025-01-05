@@ -1,2 +1,7 @@
 -S3: this service provides user unlimited object-storage (buckets and objects). An object is simply data (document, image, video, etc.) with it's metadata (information about the object such as object size, creation
 date, etc.) and a unique key to access it. A bucket is simply a container with many objects. It also has a unique name. The object and bucket concept is similar to a file and folder concept.
+ The main difference between an object and a file is the fact that the object is in the cloud, whereas the file is in a local system. This means that an object can be accessed via HTTP(S) using
+the AWS CLI for example by different devices in different places. Also, the object is more scalable, since it is stored in multiple data center whereas the regular file is limited by the architecture
+of the underlying system. Another difference is the permissions are managed through bucket policies, access control lists and IAM roles for an object, whereas for a file they are manages through
+file attributes (chmod and chown). In wrap-up, S3 Object are more suitable for large datasets, backups, media content, and web hosting, whereas regular files are for applications that require frequent,
+low-latency access and modification of small files.
